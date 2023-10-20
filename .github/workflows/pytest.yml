@@ -5,6 +5,8 @@ jobs:
   pytest:
     runs-on: ubuntu-latest
     steps:
+     - name: echo git repository url
+       run: echo ${{github.repositoryUrl}}
      - name: clone respoitory
        run: |
          git clone https://github.com/sanyuanya/github-actions-python
